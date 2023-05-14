@@ -1,4 +1,91 @@
 h1, p {
     text-align: center;
-    color: red;
 }
+
+body {
+    background: linear-gradient(
+        115deg,
+        rgba(49, 49, 164, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ), url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+    font-family: Tahoma;
+    color: whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-style: italic;
+}
+
+form {
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+    background: linear-gradient(115deg,  rgba(11, 11, 70, 0.946), 
+    rgba(7, 7, 237, 0.956));
+    /* background: opacity(1); */
+    padding: 10px;   
+}
+
+input{
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 4px;
+    border: none;
+    height: 25px;
+}
+
+fieldset {
+    border: none;
+}
+
+.field2 {
+    margin-top: -0.5rem;
+}
+
+input[type='radio'] {
+    width: unset;
+    border: none;
+    height: auto;
+}
+
+input[type='checkbox'] {
+    width: unset;
+    height: auto;
+}
+textarea {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+select{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+    height: 25px;
+    border-radius: 4px;
+}
+
+label {
+    width: 100%;
+    /* padding-top: 5cm; */
+}
+
+input[type='submit'] {
+    background-color: rgb(32, 172, 53);
+    width: 5cm;
+    height: 1cm;
+    border: none;
+    margin-left: 30%;
+    margin-right: 30%;
+    color:rgb(255, 255, 255);
+    font-style: bold;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+

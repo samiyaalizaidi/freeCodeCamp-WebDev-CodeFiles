@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <link rel='spreadsheet' href='styles.css'>
+  <link rel='stylesheet' href='styles.css'>
   <meta charset='utf-8'>
   <title>Survey Form</title>
 </head>
@@ -30,21 +30,21 @@
 
     <fieldset>
       <legend>Would you recommend freeCodeCamp to a friend?</legend>
-      <label><input class='radio' checked name='recommend' value='Definitely' type='radio'/>Definitely</label>
-      <label><input class='radio' name='recommend' value='Maybe' type='radio'/>Maybe</label>
-      <label><input class='radio' name='recommend' value='Not sure' type='radio'/>Not sure</label>
+      <div><label for="def"><input id='def' class='radio' checked name='recommend' value='Definitely' type='radio'/> Definitely</label></div>
+      <div><label for="maybe"><input id="maybe" class='radio' name='recommend' value='Maybe' type='radio'/> Maybe</label></div>
+      <div><label for="not_sure"><input id='not_sure' class='radio' name='recommend' value='Not sure' type='radio'/> Not sure</label></div>
     </fieldset>
 
     <fieldset>
       <legend>What would you like to see improved? (Check all that apply)</legend>
-      <input id='Front-end projects' value='Front-end projects' name='improvement' type='checkbox' /><label>Front-end projects</label>
-      <input id='Back-end projects' value='Back-end projects' name='improvement' type='checkbox' /><label>Back-end projects</label>
-      <input id='Data Visualization' value='Data Visualization' name='improvement' type='checkbox' /><label>Data Visualization</label>
-      <input id='Open Source Community' value='Open Source Community' name='improvement' type='checkbox' /><label>Open Source Community</label>
+      <div><label><input id='Front-end projects' value='Front-end projects' name='improvement' checked type='checkbox' /> Front-end projects</label></div>
+      <div><label><input id='Back-end projects' value='Back-end projects' name='improvement' type='checkbox' /> Back-end projects</label><div>
+      <div><label><input id='Data Visualization' value='Data Visualization' name='improvement' type='checkbox' /> Data Visualization</label></div>
+      <div><label><input id='Open Source Community' value='Open Source Community' name='improvement' type='checkbox' /> Open Source Community</label></div>
   </fieldset>
   <fieldset>
     <label>Any comments or suggestions?
-      <textarea id="suggestions" name="suggestions" rows="3" cols="30"></textarea>
+      <textarea id="suggestions" name="suggestions" rows="3" cols="20" placeholder="type your suggestions here..."></textarea>
     </label>
   <input id='submit' type="submit" value="Submit" />
   </fieldset>
