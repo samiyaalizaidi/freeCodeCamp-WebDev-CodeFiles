@@ -50,6 +50,17 @@ header {
   height: 100%
 }
 
+@media screen and (max-width: 700px) {
+  #nav-bar > ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  header {
+    justify-content: space-around;
+  }
+}
+
 .nav-link{
   transition: all 0.3s ease;
   text-decoration: none;
@@ -139,6 +150,7 @@ header {
 }
 
 /* THIRD SECTION - VIDEO */
+
 #how-it-works {
   margin-top: 50px;
   display: flex;
@@ -175,7 +187,15 @@ header {
   min-width: 200px;
 }
 
+@media screen and (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
 
+  .package {
+    width: calc(100% / 1.5);
+  }
+}
 
 .package-details > ul {
   list-style: none;
