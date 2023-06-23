@@ -6,6 +6,7 @@
   margin: 0;
   display: border-box;
   background-color: #eee;
+  scroll-behavior: smooth;
 }
 
 #header-img {
